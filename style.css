@@ -1,0 +1,100 @@
+/* 全体の背景と文字の基本設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  background-color: #fdf6f9; /* ほんのり淡いピンク系 */
+  color: #3d3842; /* 真っ黒より優しい濃いグレー */
+  line-height: 1.7;
+}
+
+/* タイトル部分 */
+.site-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eaf6f6; /* 淡いミントブルー */
+}
+
+.site-header h1 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+}
+
+/* 縦スクロールで並ぶメイン領域 */
+.gacha-list {
+  max-width: 680px; /* 横幅を広すぎないようにして読みやすく */
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* 各ガチャのカード */
+.gacha-card {
+  background-color: #ffffff;
+  border: 2px solid #f3d9e6; /* 淡いピンクの枠線 */
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 28px; /* 次のカードとの縦の間隔 */
+}
+
+/* 5つ目（最新ゲット枠）だけ少し色を変える例 */
+.latest-card {
+  background-color: #fffdf0; /* 淡いクリーム色 */
+  border-color: #f5e29c;
+}
+
+.gacha-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* 写真の表示サイズを整える */
+.gacha-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 16px auto;
+  border-radius: 12px;
+}
+
+.comment {
+  margin: 12px 0;
+}
+
+/* リストの余白 */
+.gacha-card ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.9rem;
+  color: #6e6775;
+}
+
+/* hiddenクラスがついている要素は隠す */
+.hidden {
+  display: none;
+}
+
+/* 裏話ボタン */
+.ura-btn {
+  margin-top: 12px;
+  padding: 6px 14px;
+  background-color: #ffe6f0;
+  border: 1px solid #f0b6cf;
+  border-radius: 999px;
+  color: #3d3842;
+  cursor: pointer;
+}
+
+/* 裏話の文章（任意：少し枠や背景をつけると見やすいです） */
+.ura-text {
+  margin-top: 10px;
+  padding: 12px 14px;
+  background-color: #fdf6f9;
+  border-left: 4px solid #f0b6cf;
+  border-radius: 8px;
+}
